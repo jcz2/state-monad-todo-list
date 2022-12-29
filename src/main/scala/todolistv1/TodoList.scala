@@ -5,7 +5,7 @@ import scala.collection.mutable
 
 case class Todo(id: String, description: String, completed: Boolean)
 
-class TodoListV1 {
+class TodoList {
   private val todos = mutable.Map[String, Todo]()
 
   def add(description: String): Todo = {
@@ -33,7 +33,7 @@ class TodoListV1 {
 }
 
 object Main extends App {
-  val todoList = new TodoListV1()
+  val todoList = new TodoList()
   val todo = todoList.add("Make lunch")
   todoList.check(todo.id)
   if (todoList.isCompleted) {
