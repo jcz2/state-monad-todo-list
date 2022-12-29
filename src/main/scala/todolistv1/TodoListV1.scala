@@ -1,3 +1,5 @@
+package todolistv1
+
 import java.util.UUID.randomUUID
 import scala.collection.mutable
 
